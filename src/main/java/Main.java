@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext( "config.xml" );
-        BookDao bookDao = context.getBean( "bookDaoImp" , BookDao.class );
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        BookDao bookDao = context.getBean("bookDaoImp" , BookDao.class);
 
         // ---- insert book ----
         Book newBook = new Book( 4 , "Basic of Spring Framework" , 556 );
